@@ -1,6 +1,8 @@
 import { install, Vue } from './install';
 import { checkPermission } from './checker';
 
+export const checkPermission;
+
 export class Permission {
   constructor(permission) {
     this.current = permission;

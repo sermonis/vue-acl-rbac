@@ -1,5 +1,5 @@
 import { install, Vue } from './install';
-import { checkPermission } from './checker';
+export { checkPermission } from './checker';
 
 export class Permission {
   constructor(permission) {

@@ -1,7 +1,7 @@
 {
   "name": "vue-rbac-2",
   "version": "1.1.0",
-  "main": "index.js",
+  "main": "src/index.js",
   "license": "MIT",
   "homepage": "https://github.com/chaoyenpo/vue-rbac",
   "bugs": "https://github.com/chaoyenpo/vue-rbac/issues",

@@ -1,6 +1,6 @@
 {
   "name": "vue-rbac-2",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "main": "src/index.js",
   "license": "MIT",
   "homepage": "https://github.com/chaoyenpo/vue-rbac",

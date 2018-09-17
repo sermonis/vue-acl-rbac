@@ -1,4 +1,5 @@
 import { install, Vue } from './install';
+import { checkPermission } from './checker';
 export { checkPermission } from './checker';
 
 export class Permission {
@@ -88,6 +89,15 @@ export default class VueRbac {
   }
 
   _can(rule, rules) {
+    if (rule in rules) {
+      return checkPermission(this.current, rules[rule]);
+    }
+
+    return false;
+  }
+
+  can(rule) {
+    const rules = this._getRules();
     if (rule in rules) {
       return checkPermission(this.current, rules[rule]);
     }

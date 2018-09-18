@@ -104,6 +104,15 @@ export default class VueRbac {
 
     return false;
   }
+
+  check(current, rule) {
+    const rules = this._getRules();
+    if (rule in rules) {
+      return checkPermission(current, rules[rule]);
+    }
+
+    return false;
+  }
 }
 
 VueRbac.install = install;
